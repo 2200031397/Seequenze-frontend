@@ -17,7 +17,7 @@ const Home = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/gettasks');
+      const response = await axios.get('https://seequenze-backend-2ppt.onrender.com/api/gettasks');
       setTasks(response.data);
     } catch (error) {
       console.error('Error occurred while fetching tasks:', error.response ? error.response.data : error.message);
@@ -37,7 +37,7 @@ const Home = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:3000/api/inserttask', newTask);
+      const response = await axios.post('https://seequenze-backend-2ppt.onrender.com/api/inserttask', newTask);
       if (response.status === 201) {
         setTaskHead('');
         setTaskDescription('');
@@ -59,7 +59,7 @@ const Home = () => {
       };
 
       try {
-        const response = await axios.put(`http://localhost:3000/api/updatetask/${id}`, updatedTask);
+        const response = await axios.put(`https://seequenze-backend-2ppt.onrender.com/api/updatetask/${id}`, updatedTask);
         if (response.status === 200) {
           setTaskStatus('to-do');
           setCurrentTask(null);
@@ -75,7 +75,7 @@ const Home = () => {
 
   const handleDeleteTask = async (taskId) => {
     try {
-      const response = await axios.delete(`http://localhost:3000/api/deletetask/${taskId}`);
+      const response = await axios.delete(`https://seequenze-backend-2ppt.onrender.com/api/deletetask/${taskId}`);
       if (response.status === 200) {
         fetchTasks();
       } else {
