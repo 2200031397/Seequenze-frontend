@@ -1,0 +1,235 @@
+
+
+.home {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: #292626;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  
+  box-sizing: border-box;
+
+}
+
+.search-filter-container {
+  width: 90%;
+  height: 5%;
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2E2F2F;
+  box-shadow: 4px 4px 4px 0px #00000040;
+}
+
+.search-box {
+  width: 308px; 
+  height: 44px;
+  padding: 10px 12px;
+  gap: 10px;
+  border-radius: 20px;
+  opacity: 1; /* Set to 1 for visibility */
+  background-color: #525455;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.dropdown {
+  width: 107px;
+  height: 39px;
+  padding: 10px 0px 0px 0px;
+  gap: 8px;
+  border-radius: 5px 0px 0px 0px;
+  opacity: 1; /* Set to 1 for visibility */
+  background-color: #525455;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  color: #ffffff; /* Text color inside the dropdown */
+  border: none; /* Remove default border */
+  outline: none; /* Remove default outline */
+}
+
+.lowerbody{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.allcomponents{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.expired_tasks{
+  background: #2E2F2F;
+  flex: display;
+  flex-direction: column;
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  justify-content: space-around;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.text_expired_tasks{
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 14px;
+  height: 21px;
+  color: #AAAAAA;
+  ;
+}
+
+.expired_tasks_image{
+  width: 22px;
+  height: 22px;
+  gap: 0px;
+  opacity: 0px;
+  margin: 10px;
+background-size: contain;
+
+}
+
+.addbutton{
+  width: Fill (268px)px;
+height: Fixed (48px)px;
+padding: 6px 14px 6px 12px;
+gap: 6px;
+border-radius: 19px 19px 19px 19px;
+opacity: 0px;
+background: #8976E4;
+
+}
+
+.todocard{
+  width: Fixed (354px)px;
+height: Fill (668px)px;
+padding: 20px 0px 20px 0px;
+gap: 9px;
+text-align: center;
+border-radius: 10px 10px 10px 10px;
+opacity: 0px;
+background: #2E2F2F;
+box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.todohead{
+width: 100%;
+height: 19px;
+top: 20px;
+left: 148px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.36px;
+text-align: center;
+color: #FFFFFF;
+
+}
+
+.todohrizentel{
+  width: 314px;
+height: 0px;
+gap: 0px;
+border: 3px 0px 0px 0px;
+opacity: 0px;
+color: #800080;
+border: 3px solid #5030E5
+}
+
+.todo_card{
+  width: 314px;
+height: 177px;
+top: 78px;
+left: 20px;
+gap: 0px;
+margin: 10px;
+border-radius: 16px 16px 16px 16px;
+opacity: 0px;
+background: #3F4041;
+box-shadow: 4px 4px 4px 4px #00000040;
+
+}
+
+.todocard_header{
+  width: 100%;
+height: 22px;
+top: 125px;
+left: 40px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+line-height: 21.78px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.todocard_para{
+  width: 274px;
+height: 30px;
+top: 153px;
+left: 40px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.52px;
+text-align: center;
+color: #FFFFFF;
+
+}
+
+.deadline{
+  width: Fixed (107px)px;
+height: Hug (16px)px;
+gap: 0px;
+justify: space-between;
+opacity: 0px;
+
+}
+
+.popupcontainer {
+  display: flex; /* Correct way to define flex container */
+  flex-direction: column;
+  justify-content: center;
+  width: 95%; /* Correct unit */
+  height: 504px; /* Correct unit */
+  top: -476px;
+  left: 496px;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 10px 0px 0px 0px;
+  border: 1px solid #797979; /* Correct border property */
+  opacity: 1; /* Use a value between 0 and 1 */
+  background-color: #292626;
+  background-size: cover;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.todo_card button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo_card button:first-of-type {
+  background-color: #4CAF50; /* Green for Update */
+  color: white;
+}
+
+.todo_card button:last-of-type {
+  background-color: #f44336; /* Red for Delete */
+  color: white;
+}
