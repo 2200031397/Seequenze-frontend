@@ -13,7 +13,6 @@ const Home = () => {
   const [taskDeadline, setTaskDeadline] = useState('');
   const [taskStatus, setTaskStatus] = useState('to-do');
   const [tasks, setTasks] = useState([]);
-  const [currentTask, setCurrentTask] = useState(null);
 
   const fetchTasks = async () => {
     try {
@@ -62,7 +61,6 @@ const Home = () => {
         const response = await axios.put(`https://seequenze-backend-2ppt.onrender.com/api/updatetask/${id}`, updatedTask);
         if (response.status === 200) {
           setTaskStatus('to-do');
-          setCurrentTask(null);
           fetchTasks();
         } else {
           console.error('Failed to update task:', response.statusText);
